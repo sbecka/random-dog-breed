@@ -43,8 +43,11 @@ function showDogImage(responseJson) {
 
     //if breed is not available and status is an "error"
     if (responseJson.status === "error") {
+
         return alert ("Sorry, we do not have pictures for that breed.");
+
     } else {
+
         //if breed is available
         $(".results").show();
         $('.dog-image').replaceWith(
@@ -59,8 +62,7 @@ function displayDogBreed() {
         fetchDogBreed();
         $("#dog-breed").val(""); //clear input after submit
     });
-    
-    
+     
 };
 
 $(displayDogBreed());
