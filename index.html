@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Choose a dog breed and create a random dog image here.">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Random Dog Breed</title>
+</head>
+<body>
+    <h1>Random Dog Breed Image</h1>
+    <form>
+        <label for="dog-breed">Which dog breed would you like to see?</label>
+        <input type="text" name="dog-breed" id="dog-breed">
+        <input type="submit" name="submit">
+    </form>
+    <section class="hidden results">
+        <h2>Here you go!</h2>
+        <img class= "dog-image" alt="placeholder">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
